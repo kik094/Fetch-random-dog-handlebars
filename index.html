@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Random dog images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Select a breed to generate random image!</h2>
+
+        <!-- RENDER FROM HANDLEBARS -->
+        <div id="template-output"></div>
+        <div id="img-output"></div>
+    </div>
+
+
+
+
+
+    <!-- HANDLEBARS TEMPLATES -->
+    <script type="text/x-handlebars-template" id="template">
+        <div class="select_bar">
+            <span>https://dog.ceo/api/breed/</span>
+            <select id="breeds_select">
+                    {{#each this}}
+                    <option>{{this}}</option>
+                    {{/each}}
+                </select> <span>/images/random</span>
+            <span id="input_btn">Fetch!</span>
+        </div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="template2">
+        <div>
+            <img id="dog_img" src={{this}}>
+        </div>
+    </script>
+
+
+
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

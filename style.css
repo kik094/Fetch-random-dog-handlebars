@@ -1,0 +1,41 @@
+#breeds_select {
+    font-size: 30px;
+    height: 50%;
+    padding: 3px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+span {
+    font-size: 40px;
+}
+
+.select_bar {
+    background-color: #eee;
+    padding: 20px 0 20px 20px;
+    font-size: 30px;
+}
+
+#input_btn {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #1a91db;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#dog_img {
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+}
